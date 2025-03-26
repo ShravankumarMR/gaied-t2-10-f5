@@ -45,7 +45,7 @@ def get_categories():
 
 # Endpoint to process an email file
 class FileName(BaseModel):
-     file_path: str
+    file_path: str
  
 @app.post("/process-email-file")
 def process_email_file(file: FileName):
